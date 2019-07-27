@@ -1,0 +1,1066 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#include ""res\\Kyrsovoi.rc2""  // ресурсы, не редактируемые в Microsoft Visual C++\r\n"
+    "#include ""l.RUS\\afxres.rc""      // Стандартные компоненты\r\n"
+    "#include ""l.RUS\\afxprint.rc""    // ресурсы для печати/предварительного просмотра\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.RUS\\afxribbon.rc""        // Лента MFC и ресурсы панели управления\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Kyrsovoi.ico"
+IDR_KyrsovoiTYPE        ICON                    "res\\KyrsovoiDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CUBE
+    BUTTON      ID_TOR
+    BUTTON      ID_PIRAMIDA_3
+    BUTTON      ID_IKOSAEDR
+    BUTTON      ID_PRIZMA_3
+    BUTTON      ID_PRIZMA_5
+    BUTTON      ID_CYLINDR
+    BUTTON      ID_PIRAMIDA_5
+    BUTTON      ID_POLYTOR
+    BUTTON      ID_INCR
+    BUTTON      ID_DECR
+    BUTTON      ID_LEFT
+    BUTTON      ID_RIGHT
+    BUTTON      ID_UP
+    BUTTON      ID_DOWN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "Созд&ать\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Открыть...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "Со&хранить\tCtrl+S",          ID_FILE_SAVE
+        MENUITEM "Сохранить &как...",           ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Печать...\tCtrl+P",          ID_FILE_PRINT
+        MENUITEM "Пред&варительный просмотр",   ID_FILE_PRINT_PREVIEW
+        MENUITEM "Нас&тройка печати...",        ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Последний файл",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "В&ыход",                      ID_APP_EXIT
+    END
+    POPUP "&Правка"
+    BEGIN
+        MENUITEM "Редактировать объект",        ID_CHANGE
+        MENUITEM "Удалить объект",              ID_Del
+    END
+    POPUP "С&оздать.."
+    BEGIN
+        MENUITEM "Сфера",                       ID_CR_CUBE
+        MENUITEM "Тор",                         ID_CR_TOR
+        MENUITEM "Пирамида с пятиугольным основанием", ID_CR_PIR5
+        MENUITEM "Икосаэдр",                    ID_CR_IKOS
+        MENUITEM "Призма с треугольным основанием", ID_CR_PIR3
+        MENUITEM "Косоугольная призма с пятиугольным основанием", ID_CR_PRIZMA5
+        MENUITEM "Косоугольный цилиндр",        ID_CR_CIL
+        MENUITEM "Усечённая пирамида с треугольным основанием", ID_CR_YSPIR3
+        MENUITEM "Полутор",                     ID_CR_POLYTOR
+        MENUITEM SEPARATOR
+        MENUITEM "Арбалет",                     ID_BENZOPILA
+    END
+    POPUP "&Вид"
+    BEGIN
+        POPUP "&Панели инструментов и закрепляемые окна"
+        BEGIN
+            MENUITEM "<местозаполнитель>",          ID_VIEW_TOOLBAR
+        END
+        MENUITEM "&Строка состояния",           ID_VIEW_STATUS_BAR
+        POPUP "&Вид приложения"
+        BEGIN
+            MENUITEM "Windows &2000",               ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office &XP",                  ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "&Windows XP",                 ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 200&3",                ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
+            POPUP "Office 200&7"
+            BEGIN
+                MENUITEM "&Голубой стиль",              ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "Ч&ерный стиль",               ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "&Серебристый стиль",          ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "&Зеленовато-голубой стиль",   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "Осв&ещение"
+    BEGIN
+        POPUP "Цилиндрический"
+        BEGIN
+            MENUITEM "Включить",                    ID_CIL_ON
+            MENUITEM "Выключить",                   ID_CIL_OFF
+        END
+        POPUP "Точечный"
+        BEGIN
+            MENUITEM "Включить",                    ID_POINT_ON
+            MENUITEM "Выключить",                   ID_POINT_OFF
+        END
+        POPUP "Удалённый"
+        BEGIN
+            MENUITEM "Включить",                    ID_YDAL_ON
+            MENUITEM "Выключить",                   ID_YDAL_OFF
+        END
+    END
+    POPUP "&Справка"
+    BEGIN
+        MENUITEM "&О проекте Kyrsovoi...",      ID_APP_EXIT
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "Редактировать"
+    BEGIN
+        POPUP "Режим отображения"
+        BEGIN
+            MENUITEM "Проволочная",                 ID_WIRE
+            MENUITEM "Полигональная",               ID_UNWIRE
+        END
+        POPUP "Вид проекции"
+        BEGIN
+            MENUITEM "Ортогональная OXY",           ID_OXY
+            MENUITEM "Ортогональная OXZ",           ID_OXZ
+            MENUITEM "Ортогональная OYZ",           ID_OYZ
+            MENUITEM "Косоугольная кабинетная",     ID_KABINEt
+        END
+    END
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "&О проекте Kyrsovoi...",      ID_APP_ABOUT
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (&голубой стиль)", ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (ч&ерный стиль)", ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (&серебристый стиль)", ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (&зеленовато-голубой стиль)", ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Win&dows 7",                  ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "О проекте Kyrsovoi"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "Курсовой, Лысюк Р. ПЗС-11",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "ОК",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_CHANGE DIALOGEX 0, 0, 505, 277
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Изменить"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,395,255,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,448,255,50,14
+    LTEXT           "Выберите объект",IDC_STATIC,25,7,61,8
+    GROUPBOX        "Положение",IDC_STATIC,135,7,363,78
+    GROUPBOX        "Цвет",IDC_STATIC,134,129,364,114
+    GROUPBOX        "Размеры",IDC_STATIC,134,86,364,40
+    LTEXT           "Х",IDC_STATIC,144,26,8,8
+    LTEXT           "Y",IDC_STATIC,265,26,8,8
+    LTEXT           "Z",IDC_STATIC,387,25,8,8
+    EDITTEXT        IDC_TRANS_X,173,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Y,289,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Z,408,22,40,14,ES_AUTOHSCROLL
+    LTEXT           "Х",IDC_STATIC,143,60,8,8
+    LTEXT           "Y",IDC_STATIC,265,60,8,8
+    LTEXT           "Z",IDC_STATIC,387,60,8,8
+    EDITTEXT        IDC_ROT_X,173,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Y,289,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Z,407,56,40,14,ES_AUTOHSCROLL
+    LTEXT           "Перемещение",IDC_STATIC,143,15,48,8
+    LTEXT           "Поворот",IDC_STATIC,142,43,30,8
+    LTEXT           "Х",IDC_STATIC,143,106,8,8
+    LTEXT           "Y",IDC_STATIC,265,106,8,8
+    LTEXT           "Z",IDC_STATIC,387,105,8,8
+    EDITTEXT        IDC_SCALE_X,173,103,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Y,289,103,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Z,407,102,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,177,142,321,23,WS_EX_TRANSPARENT
+    LTEXT           "Red",IDC_STATIC,137,146,14,8
+    LTEXT           "Green",IDC_STATIC,137,183,20,8
+    LTEXT           "Blue",IDC_STATIC,137,217,14,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,177,175,321,26
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,178,206,320,23
+    COMBOBOX        IDC_COMBO1,21,22,87,39,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Материал",IDC_STATIC,7,87,122,39
+    CONTROL         "Матовый",IDC_MAT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,98,47,10
+    CONTROL         "Полупрозрачный",IDC_PROZR,"Button",BS_AUTORADIOBUTTON,7,110,73,10
+END
+
+IDD_CREATE_CUBE DIALOGEX 0, 0, 513, 269
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Создать куб"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,398,248,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,456,248,50,14
+    GROUPBOX        "Положение",IDC_STATIC,136,7,363,78
+    GROUPBOX        "Цвет",IDC_STATIC,136,131,364,114
+    GROUPBOX        "Размеры",IDC_STATIC,136,88,364,40
+    LTEXT           "Х",IDC_STATIC,146,30,8,8
+    LTEXT           "Y",IDC_STATIC,267,30,8,8
+    LTEXT           "Z",IDC_STATIC,389,30,8,8
+    EDITTEXT        IDC_TRANS_X,175,27,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Y,291,27,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Z,410,26,40,14,ES_AUTOHSCROLL
+    LTEXT           "Х",IDC_STATIC,144,60,8,8
+    LTEXT           "Y",IDC_STATIC,266,60,8,8
+    LTEXT           "Z",IDC_STATIC,388,60,8,8
+    EDITTEXT        IDC_ROT_X,174,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Y,290,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Z,408,56,40,14,ES_AUTOHSCROLL
+    LTEXT           "Перемещение",IDC_STATIC,146,18,48,8
+    LTEXT           "Поворот",IDC_STATIC,143,43,30,8
+    LTEXT           "Х",IDC_STATIC,145,108,8,8
+    LTEXT           "Y",IDC_STATIC,267,108,8,8
+    LTEXT           "Z",IDC_STATIC,389,107,8,8
+    EDITTEXT        IDC_SCALE_X,175,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Y,291,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Z,409,104,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,179,148,321,23,WS_EX_TRANSPARENT
+    LTEXT           "Red",IDC_STATIC,147,156,14,8
+    LTEXT           "Green",IDC_STATIC,145,185,20,8
+    LTEXT           "Blue",IDC_STATIC,149,217,14,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,179,177,321,26
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,180,208,320,23
+    GROUPBOX        "Материал",IDC_STATIC,7,7,122,39
+    CONTROL         "Матовый",IDC_MAT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,18,47,10
+    CONTROL         "Полупрозрачный",IDC_PROZR,"Button",BS_AUTORADIOBUTTON,17,31,73,10
+    EDITTEXT        IDC_EDGE_CUBE,69,67,40,14,ES_AUTOHSCROLL
+    LTEXT           "Радиус",IDC_STATIC,15,68,48,14
+    GROUPBOX        "Параметры",IDC_STATIC,7,54,119,96
+    LTEXT           "Кол-во разбиений 1",IDC_STATIC,15,81,68,8
+    EDITTEXT        IDC_SP_RAZ01,71,92,40,14,ES_AUTOHSCROLL
+    LTEXT           "Кол-во разбиений 2",IDC_STATIC,15,106,68,8
+    EDITTEXT        IDC_SP_RAZ2,71,118,40,14,ES_AUTOHSCROLL
+END
+
+IDD_CREATE_TOR DIALOGEX 0, 0, 529, 301
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Создать тор"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,405,280,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,464,280,50,14
+    GROUPBOX        "Положение",IDC_STATIC,147,23,363,78
+    GROUPBOX        "Цвет",IDC_STATIC,147,149,364,114
+    GROUPBOX        "Размеры",IDC_STATIC,147,106,364,40
+    LTEXT           "Х",IDC_STATIC,157,47,8,8
+    LTEXT           "Y",IDC_STATIC,279,47,8,8
+    LTEXT           "Z",IDC_STATIC,401,47,8,8
+    EDITTEXT        IDC_TRANS_X,187,45,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Y,303,45,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Z,421,42,40,14,ES_AUTOHSCROLL
+    LTEXT           "Х",IDC_STATIC,155,78,8,8
+    LTEXT           "Y",IDC_STATIC,277,78,8,8
+    LTEXT           "Z",IDC_STATIC,399,78,8,8
+    EDITTEXT        IDC_ROT_X,185,74,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Y,301,74,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Z,419,74,40,14,ES_AUTOHSCROLL
+    LTEXT           "Перемещение",IDC_STATIC,157,34,48,8
+    LTEXT           "Поворот",IDC_STATIC,155,61,30,8
+    LTEXT           "Х",IDC_STATIC,157,126,8,8
+    LTEXT           "Y",IDC_STATIC,279,126,8,8
+    LTEXT           "Z",IDC_STATIC,401,125,8,8
+    EDITTEXT        IDC_SCALE_X,187,122,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Y,303,122,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Z,421,122,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,191,166,319,23,WS_EX_TRANSPARENT
+    LTEXT           "Red",IDC_STATIC,159,174,14,8
+    LTEXT           "Green",IDC_STATIC,157,202,20,8
+    LTEXT           "Blue",IDC_STATIC,161,234,14,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,191,194,319,26
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,191,226,318,23
+    GROUPBOX        "Материал",IDC_STATIC,19,23,122,39
+    CONTROL         "Матовый",IDC_MAT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,29,34,47,10
+    CONTROL         "Полупрозрачный",IDC_PROZR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,29,47,73,10
+    EDITTEXT        IDC_RAD_IN,99,80,40,14,ES_AUTOHSCROLL
+    LTEXT           "Радиус внутренний",IDC_STATIC,27,80,59,21
+    GROUPBOX        "Параметры",IDC_STATIC,19,67,119,89
+    EDITTEXT        IDC_RAD_OUT,99,99,40,14,ES_AUTOHSCROLL
+    LTEXT           "Радиус внешний",IDC_STATIC,27,103,59,12
+    EDITTEXT        IDC_RAZB_HORIZ,99,117,40,14,ES_AUTOHSCROLL
+    LTEXT           "Разбиения вдоль",IDC_STATIC,27,117,59,21
+    EDITTEXT        IDC_RAZB_VERT,99,133,40,14,ES_AUTOHSCROLL
+    LTEXT           "Разбиения поперёк",IDC_STATIC,27,133,66,21
+END
+
+IDD_CREATE_PIRAMIDA_5 DIALOGEX 0, 0, 523, 291
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Создать пирамиду c пятиугольным основанием"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,412,270,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,466,270,50,14
+    GROUPBOX        "Положение",IDC_STATIC,138,15,363,78
+    GROUPBOX        "Цвет",IDC_STATIC,138,140,364,114
+    GROUPBOX        "Размеры",IDC_STATIC,138,97,364,40
+    LTEXT           "Х",IDC_STATIC,148,39,8,8
+    LTEXT           "Y",IDC_STATIC,269,39,8,8
+    LTEXT           "Z",IDC_STATIC,391,39,8,8
+    EDITTEXT        IDC_TRANS_X,177,36,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Y,293,36,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Z,412,34,40,14,ES_AUTOHSCROLL
+    LTEXT           "Х",IDC_STATIC,146,69,8,8
+    LTEXT           "Y",IDC_STATIC,268,69,8,8
+    LTEXT           "Z",IDC_STATIC,390,69,8,8
+    EDITTEXT        IDC_ROT_X,176,66,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Y,292,66,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Z,410,65,40,14,ES_AUTOHSCROLL
+    LTEXT           "Перемещение",IDC_STATIC,148,26,48,8
+    LTEXT           "Поворот",IDC_STATIC,145,52,30,8
+    LTEXT           "Х",IDC_STATIC,147,117,8,8
+    LTEXT           "Y",IDC_STATIC,269,117,8,8
+    LTEXT           "Z",IDC_STATIC,391,116,8,8
+    EDITTEXT        IDC_SCALE_X,177,114,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Y,293,114,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Z,411,113,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,181,157,319,23,WS_EX_TRANSPARENT
+    LTEXT           "Red",IDC_STATIC,149,165,14,8
+    LTEXT           "Green",IDC_STATIC,147,194,20,8
+    LTEXT           "Blue",IDC_STATIC,151,226,14,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,181,186,319,26
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,182,217,318,23
+    GROUPBOX        "Материал",IDC_STATIC,9,15,122,39
+    CONTROL         "Матовый",IDC_MAT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,19,26,47,10
+    CONTROL         "Полупрозрачный",IDC_PROZR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,19,39,73,10
+    EDITTEXT        IDC_Height,73,76,40,14,ES_AUTOHSCROLL
+    LTEXT           "Высота",IDC_STATIC,14,78,59,14
+    GROUPBOX        "Параметры",IDC_STATIC,9,63,119,37
+END
+
+IDD_CREATE_IKOSAEDR DIALOGEX 0, 0, 519, 291
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Создать икосаедр"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,404,270,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,462,270,50,14
+    GROUPBOX        "Положение",IDC_STATIC,136,7,363,78
+    GROUPBOX        "Цвет",IDC_STATIC,136,131,364,114
+    GROUPBOX        "Размеры",IDC_STATIC,136,88,364,40
+    LTEXT           "Х",IDC_STATIC,146,30,8,8
+    LTEXT           "Y",IDC_STATIC,267,30,8,8
+    LTEXT           "Z",IDC_STATIC,389,30,8,8
+    EDITTEXT        IDC_TRANS_X,175,27,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Y,291,27,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Z,410,26,40,14,ES_AUTOHSCROLL
+    LTEXT           "Х",IDC_STATIC,144,60,8,8
+    LTEXT           "Y",IDC_STATIC,266,60,8,8
+    LTEXT           "Z",IDC_STATIC,388,60,8,8
+    EDITTEXT        IDC_ROT_X,174,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Y,290,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Z,408,56,40,14,ES_AUTOHSCROLL
+    LTEXT           "Перемещение",IDC_STATIC,146,18,48,8
+    LTEXT           "Поворот",IDC_STATIC,143,43,30,8
+    LTEXT           "Х",IDC_STATIC,145,108,8,8
+    LTEXT           "Y",IDC_STATIC,267,108,8,8
+    LTEXT           "Z",IDC_STATIC,389,107,8,8
+    EDITTEXT        IDC_SCALE_X,175,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Y,291,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Z,409,104,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,179,148,321,23,WS_EX_TRANSPARENT
+    LTEXT           "Red",IDC_STATIC,147,156,14,8
+    LTEXT           "Green",IDC_STATIC,145,185,20,8
+    LTEXT           "Blue",IDC_STATIC,149,217,14,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,179,177,321,26
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,180,208,320,23
+    GROUPBOX        "Материал",IDC_STATIC,7,7,122,39
+    CONTROL         "Матовый",IDC_MAT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,18,47,10
+    CONTROL         "Полупрозрачный",IDC_PROZR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,31,73,10
+    EDITTEXT        IDC_Rad,85,71,40,14,ES_AUTOHSCROLL
+    LTEXT           "Радиус вписанной окружности",IDC_STATIC,15,69,64,17
+    GROUPBOX        "Параметры",IDC_STATIC,7,54,119,37
+END
+
+IDD_PRIZMA_3 DIALOGEX 0, 0, 513, 291
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Создать призму с треугольным основанием"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,399,270,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,456,270,50,14
+    GROUPBOX        "Положение",IDC_STATIC,135,9,363,78
+    GROUPBOX        "Цвет",IDC_STATIC,135,134,364,114
+    GROUPBOX        "Размеры",IDC_STATIC,135,91,364,40
+    LTEXT           "Х",IDC_STATIC,149,33,8,8
+    LTEXT           "Y",IDC_STATIC,269,33,8,8
+    LTEXT           "Z",IDC_STATIC,391,33,8,8
+    EDITTEXT        IDC_TRANS_X,177,30,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Y,293,30,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Z,413,28,40,14,ES_AUTOHSCROLL
+    LTEXT           "Х",IDC_STATIC,147,63,8,8
+    LTEXT           "Y",IDC_STATIC,269,63,8,8
+    LTEXT           "Z",IDC_STATIC,391,63,8,8
+    EDITTEXT        IDC_ROT_X,177,60,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Y,293,60,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Z,411,59,40,14,ES_AUTOHSCROLL
+    LTEXT           "Перемещение",IDC_STATIC,149,20,48,8
+    LTEXT           "Поворот",IDC_STATIC,145,46,30,8
+    LTEXT           "Х",IDC_STATIC,147,111,8,8
+    LTEXT           "Y",IDC_STATIC,269,111,8,8
+    LTEXT           "Z",IDC_STATIC,391,110,8,8
+    EDITTEXT        IDC_SCALE_X,177,108,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Y,293,108,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Z,411,107,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,179,151,319,23,WS_EX_TRANSPARENT
+    LTEXT           "Red",IDC_STATIC,149,159,14,8
+    LTEXT           "Green",IDC_STATIC,147,188,20,8
+    LTEXT           "Blue",IDC_STATIC,151,220,14,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,179,180,319,26
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,181,211,318,23
+    GROUPBOX        "Материал",IDC_STATIC,9,9,122,39
+    CONTROL         "Матовый",IDC_MAT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,19,20,47,10
+    CONTROL         "Полупрозрачный",IDC_PROZR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,19,33,73,10
+    EDITTEXT        IDC_Height,77,70,40,14,ES_AUTOHSCROLL
+    LTEXT           "Высота",IDC_STATIC,15,72,59,14
+    GROUPBOX        "Параметры",IDC_STATIC,9,57,119,37
+END
+
+IDD_PRIZMA_5 DIALOGEX 0, 0, 519, 289
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Создать призму с пятиугольным основанием"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,389,268,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,462,268,50,14
+    GROUPBOX        "Положение",IDC_STATIC,133,7,363,78
+    GROUPBOX        "Цвет",IDC_STATIC,133,132,364,114
+    GROUPBOX        "Размеры",IDC_STATIC,133,90,364,40
+    LTEXT           "Х",IDC_STATIC,147,31,8,8
+    LTEXT           "Y",IDC_STATIC,267,31,8,8
+    LTEXT           "Z",IDC_STATIC,389,31,8,8
+    EDITTEXT        IDC_TRANS_X,175,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Y,291,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Z,411,26,40,14,ES_AUTOHSCROLL
+    LTEXT           "Х",IDC_STATIC,145,60,8,8
+    LTEXT           "Y",IDC_STATIC,267,60,8,8
+    LTEXT           "Z",IDC_STATIC,389,60,8,8
+    EDITTEXT        IDC_ROT_X,175,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Y,291,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Z,409,58,40,14,ES_AUTOHSCROLL
+    LTEXT           "Перемещение",IDC_STATIC,147,18,48,8
+    LTEXT           "Поворот",IDC_STATIC,143,44,30,8
+    LTEXT           "Х",IDC_STATIC,145,108,8,8
+    LTEXT           "Y",IDC_STATIC,267,108,8,8
+    LTEXT           "Z",IDC_STATIC,389,108,8,8
+    EDITTEXT        IDC_SCALE_X,175,106,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Y,291,106,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Z,409,106,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,177,148,319,23,WS_EX_TRANSPARENT
+    LTEXT           "Red",IDC_STATIC,147,156,14,8
+    LTEXT           "Green",IDC_STATIC,145,186,20,8
+    LTEXT           "Blue",IDC_STATIC,149,218,14,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,177,178,318,26
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,179,210,316,23
+    GROUPBOX        "Материал",IDC_STATIC,7,7,122,39
+    CONTROL         "Матовый",IDC_MAT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,18,47,10
+    CONTROL         "Полупрозрачный",IDC_PROZR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,31,73,10
+    EDITTEXT        IDC_Height,79,68,40,14,ES_AUTOHSCROLL
+    LTEXT           "Высота",IDC_STATIC,13,71,59,14
+    GROUPBOX        "Параметры",IDC_STATIC,7,55,119,37
+END
+
+IDD_CREATE_CILINDR DIALOGEX 0, 0, 537, 290
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Создать цилиндр"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,417,269,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,480,269,50,14
+    GROUPBOX        "Положение",IDC_STATIC,136,7,363,78
+    GROUPBOX        "Цвет",IDC_STATIC,136,131,364,114
+    GROUPBOX        "Размеры",IDC_STATIC,136,88,364,40
+    LTEXT           "Х",IDC_STATIC,146,30,8,8
+    LTEXT           "Y",IDC_STATIC,267,30,8,8
+    LTEXT           "Z",IDC_STATIC,389,30,8,8
+    EDITTEXT        IDC_TRANS_X,175,27,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Y,291,27,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Z,410,26,40,14,ES_AUTOHSCROLL
+    LTEXT           "Х",IDC_STATIC,144,60,8,8
+    LTEXT           "Y",IDC_STATIC,266,60,8,8
+    LTEXT           "Z",IDC_STATIC,388,60,8,8
+    EDITTEXT        IDC_ROT_X,174,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Y,290,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Z,408,56,40,14,ES_AUTOHSCROLL
+    LTEXT           "Перемещение",IDC_STATIC,146,18,48,8
+    LTEXT           "Поворот",IDC_STATIC,143,43,30,8
+    LTEXT           "Х",IDC_STATIC,145,108,8,8
+    LTEXT           "Y",IDC_STATIC,267,108,8,8
+    LTEXT           "Z",IDC_STATIC,389,107,8,8
+    EDITTEXT        IDC_SCALE_X,175,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Y,291,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Z,409,104,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,179,148,321,23,WS_EX_TRANSPARENT
+    LTEXT           "Red",IDC_STATIC,147,156,14,8
+    LTEXT           "Green",IDC_STATIC,145,185,20,8
+    LTEXT           "Blue",IDC_STATIC,149,217,14,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,179,177,321,26
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,180,208,320,23
+    GROUPBOX        "Материал",IDC_STATIC,7,7,122,39
+    CONTROL         "Матовый",IDC_MAT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,18,47,10
+    CONTROL         "Полупрозрачный",IDC_PROZR,"Button",BS_AUTORADIOBUTTON,17,31,73,10
+    GROUPBOX        "Параметры",IDC_STATIC,7,54,119,70
+    EDITTEXT        IDC_CYL_HEIGHT,52,67,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CYL_RADIUS,52,86,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CYL_RAZB,52,105,40,14,ES_AUTOHSCROLL
+    LTEXT           "Высота",IDC_STATIC,7,69,31,14
+    LTEXT           "Радиус",IDC_STATIC,7,85,31,14
+    LTEXT           "Разбиения",IDC_STATIC,7,105,38,14
+END
+
+IDD_PIRAMIDA3 DIALOGEX 0, 0, 517, 290
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Создать пирамиду с теугольным основанием"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,417,269,50,14
+    GROUPBOX        "Положение",IDC_STATIC,133,7,363,78
+    GROUPBOX        "Цвет",IDC_STATIC,133,132,364,114
+    GROUPBOX        "Размеры",IDC_STATIC,133,89,364,40
+    LTEXT           "Х",IDC_STATIC,147,31,8,8
+    LTEXT           "Y",IDC_STATIC,267,31,8,8
+    LTEXT           "Z",IDC_STATIC,389,31,8,8
+    EDITTEXT        IDC_TRANS_X,175,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Y,291,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Z,411,26,40,14,ES_AUTOHSCROLL
+    LTEXT           "Х",IDC_STATIC,145,61,8,8
+    LTEXT           "Y",IDC_STATIC,267,61,8,8
+    LTEXT           "Z",IDC_STATIC,389,61,8,8
+    EDITTEXT        IDC_ROT_X,175,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Y,291,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Z,409,57,40,14,ES_AUTOHSCROLL
+    LTEXT           "Перемещение",IDC_STATIC,147,18,48,8
+    LTEXT           "Поворот",IDC_STATIC,143,44,30,8
+    LTEXT           "Х",IDC_STATIC,145,109,8,8
+    LTEXT           "Y",IDC_STATIC,267,109,8,8
+    LTEXT           "Z",IDC_STATIC,389,108,8,8
+    EDITTEXT        IDC_SCALE_X,175,106,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Y,291,106,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Z,409,105,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,177,149,319,23,WS_EX_TRANSPARENT
+    LTEXT           "Red",IDC_STATIC,147,157,14,8
+    LTEXT           "Green",IDC_STATIC,145,186,20,8
+    LTEXT           "Blue",IDC_STATIC,149,218,14,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,177,178,319,26
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,179,209,317,23
+    GROUPBOX        "Материал",IDC_STATIC,7,7,122,39
+    CONTROL         "Матовый",IDC_MAT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,18,47,10
+    CONTROL         "Полупрозрачный",IDC_PROZR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,31,73,10
+    EDITTEXT        IDC_Height,81,68,40,14,ES_AUTOHSCROLL
+    LTEXT           "Высота",IDC_STATIC,15,70,59,14
+    GROUPBOX        "Параметры",IDC_STATIC,7,55,119,37
+    PUSHBUTTON      "Отмена",IDCANCEL,460,269,50,14
+END
+
+IDD_CREATE_POLYTOR DIALOGEX 0, 0, 505, 292
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Создать полутор"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,390,271,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,448,271,50,14
+    GROUPBOX        "Положение",IDC_STATIC,129,7,363,78
+    GROUPBOX        "Цвет",IDC_STATIC,129,131,364,114
+    GROUPBOX        "Размеры",IDC_STATIC,129,88,364,40
+    LTEXT           "Х",IDC_STATIC,139,30,8,8
+    LTEXT           "Y",IDC_STATIC,260,30,8,8
+    LTEXT           "Z",IDC_STATIC,382,30,8,8
+    EDITTEXT        IDC_TRANS_X,168,27,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Y,284,27,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRANS_Z,403,26,40,14,ES_AUTOHSCROLL
+    LTEXT           "Х",IDC_STATIC,137,60,8,8
+    LTEXT           "Y",IDC_STATIC,259,60,8,8
+    LTEXT           "Z",IDC_STATIC,381,60,8,8
+    EDITTEXT        IDC_ROT_X,167,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Y,283,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT_Z,401,56,40,14,ES_AUTOHSCROLL
+    LTEXT           "Перемещение",IDC_STATIC,139,18,48,8
+    LTEXT           "Поворот",IDC_STATIC,136,43,30,8
+    LTEXT           "Х",IDC_STATIC,138,108,8,8
+    LTEXT           "Y",IDC_STATIC,260,108,8,8
+    LTEXT           "Z",IDC_STATIC,382,107,8,8
+    EDITTEXT        IDC_SCALE_X,168,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Y,284,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Z,402,104,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,172,148,321,23,WS_EX_TRANSPARENT
+    LTEXT           "Red",IDC_STATIC,140,156,14,8
+    LTEXT           "Green",IDC_STATIC,138,185,20,8
+    LTEXT           "Blue",IDC_STATIC,142,217,14,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,172,177,321,26
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,173,208,320,23
+    GROUPBOX        "Материал",IDC_STATIC,0,7,122,39
+    CONTROL         "Матовый",IDC_MAT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,10,18,47,10
+    CONTROL         "Полупрозрачный",IDC_PROZR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,10,31,73,10
+    EDITTEXT        IDC_RAD_IN,79,67,40,14,ES_AUTOHSCROLL
+    LTEXT           "Радиус внутренний",IDC_STATIC,7,67,59,21
+    GROUPBOX        "Параметры",IDC_STATIC,0,54,119,89
+    EDITTEXT        IDC_RAD_OUT,79,86,40,14,ES_AUTOHSCROLL
+    LTEXT           "Радиус внешний",IDC_STATIC,7,90,59,12
+    EDITTEXT        IDC_RAZB_HORIZ,79,104,40,14,ES_AUTOHSCROLL
+    LTEXT           "Разбиения вдоль",IDC_STATIC,7,104,59,21
+    EDITTEXT        IDC_RAZB_VERTIK,79,120,40,14,ES_AUTOHSCROLL
+    LTEXT           "Разбиения поперёк",IDC_STATIC,7,120,66,21
+END
+
+IDD_DelObj DIALOGEX 0, 0, 261, 118
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Удалить"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Удалить",IDOK,103,65,50,14
+    LTEXT           "Выберите объект",IDC_STATIC,101,7,61,8
+    COMBOBOX        IDC_Sel_Obj,85,21,87,39,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Название организации>"
+            VALUE "FileDescription", "Kyrsovoi"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Kyrsovoi.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Название организации>. Все права защищены."
+            VALUE "OriginalFilename", "Kyrsovoi.exe"
+            VALUE "ProductName", "TODO: <Название продукта>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_CHANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 498
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 269
+    END
+
+    IDD_CREATE_CUBE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 506
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_CREATE_TOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 522
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 294
+    END
+
+    IDD_CREATE_PIRAMIDA_5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 516
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 284
+    END
+
+    IDD_CREATE_IKOSAEDR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 512
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 284
+    END
+
+    IDD_PRIZMA_3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 506
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 284
+    END
+
+    IDD_PRIZMA_5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 512
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+
+    IDD_CREATE_CILINDR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 530
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_PIRAMIDA3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 510
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_CREATE_POLYTOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 498
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 285
+    END
+
+    IDD_DelObj, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "Не удалось выполнить инициализацию OLE. Убедитесь в том, что используются правильные версии библиотек OLE."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Kyrsovoi\n\nKyrsovoi\nKyrsovoi Files (*.A09)\n.A09\nKyrsovoi.Document\nKyrsovoi.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Kyrsovoi"
+    AFX_IDS_IDLEMESSAGE     "Готово"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Создание нового документа\nСоздать"
+    ID_FILE_OPEN            "Открытие существующего документа\nОткрыть"
+    ID_FILE_CLOSE           "Закрытие активного документа\nЗакрыть"
+    ID_FILE_SAVE            "Сохранение активного документа\nСохранить"
+    ID_FILE_SAVE_AS         "Сохранение активного документа под новым именем\nСохранить как"
+    ID_FILE_PAGE_SETUP      "Изменение параметров печати\nПараметры страницы"
+    ID_FILE_PRINT_SETUP     "Изменение принтера и параметров печати\nНастройка печати"
+    ID_FILE_PRINT           "Печать активного документа\nПечать"
+    ID_FILE_PRINT_DIRECT    "Печать активного документа с использованием текущих параметров\nБыстрая печать"
+    ID_FILE_PRINT_PREVIEW   "Просмотр документа в полностраничном режиме\nПредварительный просмотр"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Вывод сведений о программе, ее версии и авторских правах\nО программе"
+    ID_APP_EXIT             "Завершение работы приложения с запросом на сохранение документов\nВыход"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Открытие данного документа"
+    ID_FILE_MRU_FILE2       "Открытие данного документа"
+    ID_FILE_MRU_FILE3       "Открытие данного документа"
+    ID_FILE_MRU_FILE4       "Открытие данного документа"
+    ID_FILE_MRU_FILE5       "Открытие данного документа"
+    ID_FILE_MRU_FILE6       "Открытие данного документа"
+    ID_FILE_MRU_FILE7       "Открытие данного документа"
+    ID_FILE_MRU_FILE8       "Открытие данного документа"
+    ID_FILE_MRU_FILE9       "Открытие данного документа"
+    ID_FILE_MRU_FILE10      "Открытие данного документа"
+    ID_FILE_MRU_FILE11      "Открытие данного документа"
+    ID_FILE_MRU_FILE12      "Открытие данного документа"
+    ID_FILE_MRU_FILE13      "Открытие данного документа"
+    ID_FILE_MRU_FILE14      "Открытие данного документа"
+    ID_FILE_MRU_FILE15      "Открытие данного документа"
+    ID_FILE_MRU_FILE16      "Открытие данного документа"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Переход к следующей области окна\nСледующая область"
+    ID_PREV_PANE            "Возврат к предыдущей области окна\nПредыдущая область"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Разделение активного окна на области\nРазделить"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Удаление выделенного фрагмента\nУдалить"
+    ID_EDIT_CLEAR_ALL       "Полное удаление содержимого документа\nУдалить все"
+    ID_EDIT_COPY            "Копирование выделенного фрагмента в буфер обмена\nКопировать"
+    ID_EDIT_CUT             "Удаление выделенного фрагмента в буфер обмена\nВырезать"
+    ID_EDIT_FIND            "Поиск указанного текста\nНайти"
+    ID_EDIT_PASTE           "Вставка содержимого буфера обмена\nВставить"
+    ID_EDIT_REPEAT          "Повторение последнего действия\nПовторить"
+    ID_EDIT_REPLACE         "Замена заданного текста другим текстом\nЗаменить"
+    ID_EDIT_SELECT_ALL      "Выделение всего документа\nВыделить все"
+    ID_EDIT_UNDO            "Отмена последнего действия\nОтменить"
+    ID_EDIT_REDO            "Повторное выполнение последнего отмененного действия\nВернуть"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "Показать или скрыть строку состояния\n Переключение строки состояния"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Изменение размера окна"
+    AFX_IDS_SCMOVE          "Изменение положения окна"
+    AFX_IDS_SCMINIMIZE      "Свертывание окна в значок"
+    AFX_IDS_SCMAXIMIZE      "Развертывание окна до полного размера"
+    AFX_IDS_SCNEXTWINDOW    "Переход к следующему окну документа"
+    AFX_IDS_SCPREVWINDOW    "Переход к предыдущему окну документа"
+    AFX_IDS_SCCLOSE         "Закрытие активного окна с запросом на сохранение документов"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Восстановление исходных размеров окна"
+    AFX_IDS_SCTASKLIST      "Переход к списку задач"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Выход из режима предварительного просмотра\nОтменить просмотр"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "Панель 1"
+    IDS_STATUS_PANE2        "Панель 2"
+    IDS_TOOLBAR_STANDARD    "Стандартный"
+    IDS_TOOLBAR_CUSTOMIZE   "Настройка..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EDIT_MENU           "Редактировать"
+END
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#include "res\Kyrsovoi.rc2"  // ресурсы, не редактируемые в Microsoft Visual C++
+#include "l.RUS\afxres.rc"      // Стандартные компоненты
+#include "l.RUS\afxprint.rc"    // ресурсы для печати/предварительного просмотра
+#if !defined(_AFXDLL)
+#include "l.RUS\afxribbon.rc"        // Лента MFC и ресурсы панели управления
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,38 @@
+﻿Сборка начата 12.06.2014 11:48:48.
+     1>Проект "C:\Users\Родион\Documents\Visual Studio 2013\Projects\Kyrsovoi\Kyrsovoi\Kyrsovoi\Kyrsovoi.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\Kyrsovoi.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt KyrsovoiDoc.cpp "СDeleteObj.cpp"
+         KyrsovoiDoc.cpp
+         СDeleteObj.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Родион\Documents\Visual Studio 2013\Projects\Kyrsovoi\Kyrsovoi\Release\Kyrsovoi.exe" /INCREMENTAL:NO /NOLOGO glaux.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\Родион\Documents\Visual Studio 2013\Projects\Kyrsovoi\Kyrsovoi\Release\Kyrsovoi.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Родион\Documents\Visual Studio 2013\Projects\Kyrsovoi\Kyrsovoi\Release\Kyrsovoi.lib" /MACHINE:X86 /SAFESEH:NO Release\Kyrsovoi.res
+         Release\Change.obj
+         Release\CreateIkosaedr.obj
+         Release\CreatePiramida3.obj
+         Release\CreatePiramida5.obj
+         Release\CreatePolytor.obj
+         Release\CreatePrizma3.obj
+         Release\CreatePrizma5.obj
+         Release\CreateTor.obj
+         Release\Create_Cube.obj
+         Release\Kyrsovoi.obj
+         Release\KyrsovoiDoc.obj
+         Release\KyrsovoiView.obj
+         Release\MainFrm.obj
+         Release\REATE_CYLINDR.obj
+         Release\stdafx.obj
+         "Release\СDeleteObj.obj"
+         Создание кода
+     1>c:\users\родион\documents\visual studio 2013\projects\kyrsovoi\kyrsovoi\kyrsovoi\createtor.cpp(120): warning C4715: CCreateTor::OnInitDialog: значение возвращается не при всех путях выполнения
+     1>c:\users\родион\documents\visual studio 2013\projects\kyrsovoi\kyrsovoi\kyrsovoi\createprizma5.cpp(110): warning C4715: CCreatePrizma5::OnInitDialog: значение возвращается не при всех путях выполнения
+     1>c:\users\родион\documents\visual studio 2013\projects\kyrsovoi\kyrsovoi\kyrsovoi\createprizma3.cpp(108): warning C4715: CCreatePrizma3::OnInitDialog: значение возвращается не при всех путях выполнения
+     1>c:\users\родион\documents\visual studio 2013\projects\kyrsovoi\kyrsovoi\kyrsovoi\createpolytor.cpp(123): warning C4715: CCreatePolytor::OnInitDialog: значение возвращается не при всех путях выполнения
+     1>c:\users\родион\documents\visual studio 2013\projects\kyrsovoi\kyrsovoi\kyrsovoi\createpiramida5.cpp(113): warning C4715: CCreatePiramida5::OnInitDialog: значение возвращается не при всех путях выполнения
+     1>c:\users\родион\documents\visual studio 2013\projects\kyrsovoi\kyrsovoi\kyrsovoi\createpiramida3.cpp(112): warning C4715: CCreatePiramida3::OnInitDialog: значение возвращается не при всех путях выполнения
+         Создание кода завершено
+         Kyrsovoi.vcxproj -> C:\Users\Родион\Documents\Visual Studio 2013\Projects\Kyrsovoi\Kyrsovoi\Release\Kyrsovoi.exe
+     1>Сборка проекта "C:\Users\Родион\Documents\Visual Studio 2013\Projects\Kyrsovoi\Kyrsovoi\Kyrsovoi\Kyrsovoi.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:05.09
